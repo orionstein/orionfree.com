@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "This is a stateless shell running in Lambda.<br />You can use standard linux commands, such as ls and cat."

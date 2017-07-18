@@ -1,0 +1,82 @@
+{
+  "locations": [
+    {
+      "id": 0,
+      "description": "You are in a cave. It is dark.",
+      "directions": {
+        "north": {
+          "loc": 1,
+          "door": "door01"
+        }
+      },
+      "interactives": [
+        "key01",
+        "rock01"
+      ],
+      "containers": [
+        "door01"
+      ],
+      "actors": [
+      ]
+    },
+    {
+      "id": 1,
+      "description": "You are in a tunnel. It is dark.",
+      "directions": {
+        "south": {
+          "loc": 0,
+          "door": null
+        }
+      },
+      "items": [
+      ],
+      "interactives": [
+      ],
+      "containers": [
+        "statue01"
+      ],
+      "actors": [
+      ]
+    }
+  ],
+  "containers": {
+    "door01": {
+      "names": ["door"],
+      "description": "You see a large door",
+      "locked": true,
+      "required": "key01"
+    },
+    "statue01": {
+      "names": ["statue", "glowing statue"],
+      "description": "You see a glowing statue",
+      "actions": {
+        "smash": {
+          "success": {
+            "You smash the statue",
+            "modify": {
+              "key": "door02",
+              "props": {
+                "locked": false
+              }
+            }
+          },
+          "required": "rock"
+        }
+      }
+    }
+  },
+  "interactives": {
+    "key01": {
+      "names": ["key","golden key"],
+      "description": "You see a golden key",
+      "carryable": true
+    },
+    "rock01": {
+      "names": ["rock","stone"],
+      "description": "You see a small rock",
+      "carryable": true
+    }
+  },
+  "actors": {
+  }
+}

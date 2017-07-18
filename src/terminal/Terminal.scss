@@ -1,0 +1,145 @@
+
+
+// Meslo
+@font-face {
+  font-family: "meslo";
+  src: url('../fonts/meslo.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "orbitron";
+  src: url('../fonts/orbitron-light-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+.test {
+  font-family: orbitron;
+}
+
+.terminal {
+  clear: both;
+  background-color: #333333;
+
+  font-family: meslo;
+  // height: 150px;
+  padding: 1.5rem;
+  color: white;
+  opacity: 0.98;
+  border-radius: 0.3rem;
+  .termScroll {
+    div {
+      // overflow-x: hidden !important;
+    }
+  }
+  .term-shellname {
+    display: inline-block;
+    padding-right: 0.4rem;
+    // color: #206CAA;
+    color: #62B9FF;
+  }
+  .term-cursor {
+    font-weight: 100;
+    font-size: 1.1rem;
+    display: inline-block;
+    line-height: 2.4rem;
+    width: 1rem;
+    color: #00FF00;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  .term-input {
+    opacity:0;
+    filter:alpha(opacity=0);
+    width: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border:none;
+    color: #00FF00;
+  }
+  .term-input-text {
+    background-color: transparent;
+    display: inline-block;
+    border:none;
+    color: #00FF00;
+  }
+  .term-result-text {
+    padding-left: 6.5rem;
+    padding-right: 0.5rem;
+  }
+  .entryItem {
+    padding-top: 0.3rem;
+    word-break: break-all;
+    word-wrap: break-word;
+    &.error {
+      color: #FF5555;
+    }
+  }
+  .terminalWrapper {
+    max-height: 15rem;
+    overflow-y: auto;
+  }
+  .track-vertical {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    div {
+      // background-color: #96a1cf !important;
+      background-color: #62B9FF !important;
+      opacity: 0.5 !important;
+      border-radius: 2rem !important;
+    }
+  }
+
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #00FF00;
+    }
+  }
+
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #00FF00;
+    }
+  }
+
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #00FF00;
+    }
+  }
+
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #00FF00;
+    }
+  }
+
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #00FF00;
+    }
+  }
+}
