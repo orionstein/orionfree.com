@@ -1,0 +1,28 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "browser",
+    "react",
+    "jquery",
+    "lodash",
+    "ramda"
+  ],
+  "async": true,
+  "plugins": {
+    "webpack": {
+      "configPath": "./config/webpack.config.dev.js"
+    },
+    "node": "{}",
+    "jsx": "{}",
+    "react": "./",
+    "modules": {},
+    "es_modules": {},
+    "complete_strings": {
+      "maxLength": "15"
+    },
+    "doc_comment": {
+      "fullDocs": "true",
+      "strong": "true"
+    }
+  }
+}
