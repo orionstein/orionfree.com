@@ -33,6 +33,8 @@ bower_components
 build/Release
 
 # Dependency directories
+elm-stuff/
+elm-core/
 node_modules/
 jspm_packages/
 
@@ -56,4 +58,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+key.pem
 
